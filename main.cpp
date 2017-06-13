@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 /**
@@ -8,7 +9,8 @@ using namespace std;
  * @param  int amount An amount of fibonacci numbers
  * @return bool
  */
-bool isPrime(int number) {
+bool isPrime(int number)
+{
     return (bool) (number % 2);
 }
 
@@ -21,7 +23,8 @@ bool isPrime(int number) {
  * @param  int   amount  The amount of numbers to calculate
  * @return double
  */
-double getPrimeNotPrimeSum(int numbers[], int amount) {
+double getPrimeNotPrimeSum(int numbers[], int amount)
+{
     double total = numbers[0];
 
     for (int i = 1; i < amount; i++) {
@@ -40,7 +43,8 @@ double getPrimeNotPrimeSum(int numbers[], int amount) {
  * @author Chad Petersen
  * @return int
  */
-int main() {
+int main()
+{
     int numbers[] = {1, 2, 3, 7, 8, 19};
     int amount    = 6;
 
